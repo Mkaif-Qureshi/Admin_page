@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Table</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button class="search-icon" onclick="search()">Search</button>
+      <button onclick="deleteSelected()" class="delete-all"><span class="material-symbols-outlined">
+        delete
+        </span></button>
+    </div>
+    <table id="dataTable">
+      <!-- Table content will be added dynamically -->
+    </table>
+    <div class="info">
+      <span id="selectedRowsInfo">0 of 0 row(s) selected</span>
+      <span id="paginationInfo">Page 1 of 1</span>
+      <!-- Pagination buttons will be added dynamically -->
+    </div>
+  </div>
+</div>
+<!-- Modal Structure -->
+<div class="overlay hidden"></div>
+<div class="modal hidden">
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
